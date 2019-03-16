@@ -1,0 +1,60 @@
+body,
+html,
+p,
+div,
+ul,
+li,
+a,
+p,
+input,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: bottom;
+}
+
+body {
+    font-family: '微软雅黑';
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+.f_l{
+    float: left;
+}
+.f_r {
+    float: right;
+}

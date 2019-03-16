@@ -1,0 +1,137 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.box .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+
+.box .header .hd_l,
+.box .header .hd_r {
+    width: 49px;
+    position: absolute;
+    top: 0;
+    height: 49px;
+    padding: 13px;
+    background: url('../images/jd-sprites.png');
+    background-size: 200px 200px;
+    background-origin: content-box;
+    background-clip: content-box;
+
+}
+
+.box .header .hd_l {
+    left: 0;
+    background-position: -20px 4px;
+}
+
+.box .header .hd_r {
+    right: 0;
+    background-position: -60px 4px;
+}
+
+.box .header .hd_c {
+    padding: 5px 50px;
+    width: 100%;
+
+}
+
+.box .header .hd_c input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #666;
+    padding-left: 15px;
+}
+
+/* 头部搜索框结束 */
+/* //主题部分开始 */
+.box .main {
+    width: 100%;
+    height: 100%;
+}
+
+.box .main .main_l {
+    width: 100px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.box .main .main_l ul li {
+    line-height: 50px;
+    text-align: center;
+
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.main .main_l li.active a {
+    color: #e92322;
+}
+
+.box .main .main_r {
+    height: 100%;
+    margin-left: 100px;
+    background-color: skyblue;
+}
+
+.box .main .main_r .main_r_hd {
+    width: 100%;
+}
+
+.main .main_r .main_r_hd img {
+    width: 100%;
+}
+
+.main_r_ma_hd {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+}
+
+.main_r_ma {
+    width: 100%;
+}
+
+.main_r_ma ul {
+    width: 100%;
+}
+
+.main_r_ma li {
+    margin-top: 15px;
+    width: 33.3%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.main_r_ma li a img {
+    width: 60%;
+}
+
+.main_r_ma li p {
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}

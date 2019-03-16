@@ -1,0 +1,269 @@
+.jd_layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    /* height: 2000px; */
+    background-color:cyan;
+    border: 1px solid #ccc;
+}
+
+.jd_search {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background-color:rgba(233,35,34,0);
+    position: fixed;
+    z-index: 2;
+}
+
+.jd_logo {
+    width: 56px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    background: url('../images/jd-sprites.png');
+    background-size: 200px 200px;
+    background-position: 0 -108px;
+}
+
+.jd_login {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+}
+
+.jd_searchBox {
+    /* width: 100%; */
+    height: 100%;
+    padding-left: 76px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.jd_searchBox>input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 35px;
+    margin-top: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.jd_searchBox::after {
+    content: '';
+    width: 27px;
+    height: 23px;
+    background: url('../images/jd-sprites.png');
+    background-size: 200px 200px;
+    background-position: -56px -108px;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}
+
+/* 搜索块结束 */
+/* 轮播图结构开始 */
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_bannerImg {
+    position: relative;
+    /* width: 800%; */
+}
+
+.jd_bannerImg>li {
+    /* width: 12.5%; */
+    float: left;
+}
+
+.jd_bannerImg>li img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.jd_bannerIndicator {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.jd_bannerIndicator li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 8px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.jd_bannerIndicator li.current {
+    background-color: skyblue;
+}
+
+/* 轮播图结构结束 */
+
+/* 导航块开始 */
+.jd_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+
+
+}
+
+.jd_nav ul li {
+    text-align: center;
+    /* height: 100%; */
+    width: 25%;
+    margin: 15px 0;
+    /* justify-content: space-between; */
+    /* height: 50px; */
+}
+
+.jd_nav ul li img {
+    width: 40%;
+}
+
+.jd_nav ul li p {
+    margin-top: 5px;
+    letter-spacing: 3px;
+}
+
+/* 秒杀模块 */
+.jd_product {
+    width: 100%;
+}
+
+.jd_secKill {
+    width: 100%;
+    background-color: #fff;
+}
+
+.jd_sk_hd>p:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+.jd_sk_hd {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.jd_sk_txt {
+    color: #e92322;
+}
+
+.jd_sk_txt::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 9px;
+    width: 16px;
+    height: 20px;
+    background: url('../uploads/seckill-icon.png');
+    background-size: contain;
+    background-position: 0 0;
+}
+
+.jd_sk_time {
+    width: 120px;
+    /* background-color: red; */
+}
+
+.jd_sk_time>span {
+    display: inline-block;
+    width: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.jd_sk_time>span:nth-of-type(3n) {
+    background-color: #fff;
+    color: #000;
+}
+
+.mar_l_10 {
+    margin-left: 10px;
+}
+
+.mar_r_10 {
+    margin-right: 10px;
+}
+
+.jd_ks_main {
+    width: 100%;
+}
+
+.jd_ks_main a {
+    display: block;
+    float: left;
+    width: 32%;
+    text-align: center;
+}
+
+.jd_ks_main>a img {
+    width: 60%;
+    display: inline-block;
+
+}
+
+.jd_productBox {
+    width: 100%;
+}
+
+.jd_productBox h3 {
+    height: 25px;
+    margin-left: 30px;
+}
+.jd_pTip {
+    position: relative;
+    /* line-height: 100%; */
+}
+.jd_productBox h3:after{
+    content: "";
+    width: 0px;
+    height: 10px;
+    border: 2px solid #e92322;
+    position: absolute;
+    top: 6px;
+    left: 16px;
+}
+
+.jd_pContent {
+    width: 100%;
+    background-color: #fff;
+}
+
+.jd_pContent a {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.jd_pContent a img {
+    width: 100%;
+    /* float: left; */
+    /* display: block; */
+}
+.bor_r {
+    border-right: 1px solid #ccc;
+}
+.bor_l {
+    border-left: 1px solid #ccc;
+}
+.bor_t {
+    border-top: 1px solid #ccc;
+}
